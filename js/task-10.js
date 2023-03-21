@@ -7,7 +7,7 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   const boxes = document.querySelector("#boxes");
   boxes.innerHTML = "";
-  const padding = "0.5rem";
+  const marginBot = "0.5rem";
 
   let width = 30;
   let height = 30;
@@ -17,7 +17,7 @@ function createBoxes(amount) {
     div.style.width = `${width}px`;
     div.style.height = `${height}px`;
     div.style.backgroundColor = getRandomHexColor();
-    div.style.marginBottom = padding;
+    div.style.marginBottom = marginBot;
     boxes.appendChild(div);
 
     width += 10;
